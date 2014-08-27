@@ -17,8 +17,20 @@ static id <PCKDataSpec> dataSpec;
 + (void)setApplicationId:(NSString *)anApplicationId dataSpec:(id <PCKDataSpec>)aDataSpec
 {
     @synchronized(self) {
-        applicationId = anApplicationId;
-        dataSpec = aDataSpec;
+        
+        if (anApplicationId) {
+            applicationId = anApplicationId;
+        } else {
+            @throw [NSException exceptionWithName:@"PCKitApplicationIdNilException"
+                                           reason:@"You shoud not set required application id to nil" userInfo:nil];
+        }
+        
+        if (aDataSpec) {
+            dataSpec = aDataSpec;
+        } else {
+            @throw [NSException exceptionWithName:@"PCKitDataSpecNilException"
+                                           reason:@"You shoud not set required data spec to nil" userInfo:nil];
+        }
     }
 }
 
