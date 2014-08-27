@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol PCKDataSpec;
+
 @interface PCKit : NSObject
 
-+ (void)setApplicationId:(NSString *)applicationId;
+/*!
+ Sets the applicationId and date spec object of your application. The data spec object must conforms to the PCKDataSpec protocol to work perfectly.
+ @param applicationId The application id for your Parse application.
+ @param the data spec object
+ */
++ (void)setApplicationId:(NSString *)applicationId dataSpec:(id <PCKDataSpec>)dataSpec;
 + (NSString *)getApplicationId;
++ (id <PCKDataSpec>)getDataSpec;
 
 @end

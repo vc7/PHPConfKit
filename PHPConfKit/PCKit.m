@@ -7,25 +7,32 @@
 //
 
 #import "PCKit.h"
+#import "PCKDataSpecProtocol.h"
 
 @implementation PCKit
 
-static NSString *appId;
+static NSString *applicationId;
+static id <PCKDataSpec> dataSpec;
 
-/*!
- Sets the applicationId and clientKey of your application.
- @param applicationId The application id for your Parse application.
- */
-+ (void)setApplicationId:(NSString *)applicationId
++ (void)setApplicationId:(NSString *)anApplicationId dataSpec:(id <PCKDataSpec>)aDataSpec
 {
     @synchronized(self) {
-        appId = applicationId;
+        applicationId = anApplicationId;
+        dataSpec = aDataSpec;
     }
 }
+
 + (NSString *)getApplicationId
 {
     @synchronized(self) {
-        return appId;
+        return applicationId;
+    }
+}
+
++ (id <PCKDataSpec>)getDataSpec
+{
+    @synchronized(self) {
+        return dataSpec;
     }
 }
 
