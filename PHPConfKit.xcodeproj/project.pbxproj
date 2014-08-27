@@ -171,10 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF0E30DD19AB86EC00F0A5E2 /* PHPConfKit.h in Headers */,
+				BFE918EB19AE2D32008925C3 /* PCKDataSpecProtocol.h in Headers */,
 				BF0E30DE19AB86EC00F0A5E2 /* PCKit.h in Headers */,
 				BFE918E819AE2A29008925C3 /* PCKSynchronizer.h in Headers */,
 				BF0E30DF19AB86EC00F0A5E2 /* PHPConfKit-Prefix.pch in Headers */,
-				BFE918EB19AE2D32008925C3 /* PCKDataSpecProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
