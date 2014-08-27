@@ -8,5 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#import "PCKDataSpecProtocol.h"
+
 #import "PCKit.h"
 #import "PCKSynchronizer.h"
