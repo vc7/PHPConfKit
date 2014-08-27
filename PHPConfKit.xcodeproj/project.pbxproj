@@ -19,6 +19,8 @@
 		BF26AA5B19AB805000E06B31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF26AA5919AB805000E06B31 /* InfoPlist.strings */; };
 		BF26AA5D19AB805000E06B31 /* PHPConfKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF26AA5C19AB805000E06B31 /* PHPConfKitTests.m */; };
 		BF26AA6819AB858D00E06B31 /* PCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF26AA6719AB858D00E06B31 /* PCKit.m */; };
+		BFE918E819AE2A29008925C3 /* PCKSynchronizer.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE918E619AE2A29008925C3 /* PCKSynchronizer.h */; };
+		BFE918E919AE2A29008925C3 /* PCKSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE918E719AE2A29008925C3 /* PCKSynchronizer.m */; };
 		C36EFA5534064A71A1DEB008 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E332F584B5BA494FA50C9967 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		BF26AA5C19AB805000E06B31 /* PHPConfKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHPConfKitTests.m; sourceTree = "<group>"; };
 		BF26AA6619AB858D00E06B31 /* PCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCKit.h; sourceTree = "<group>"; };
 		BF26AA6719AB858D00E06B31 /* PCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCKit.m; sourceTree = "<group>"; };
+		BFE918E619AE2A29008925C3 /* PCKSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCKSynchronizer.h; sourceTree = "<group>"; };
+		BFE918E719AE2A29008925C3 /* PCKSynchronizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCKSynchronizer.m; sourceTree = "<group>"; };
 		E332F584B5BA494FA50C9967 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +127,8 @@
 				BF26AA4519AB805000E06B31 /* PHPConfKit.h */,
 				BF26AA6619AB858D00E06B31 /* PCKit.h */,
 				BF26AA6719AB858D00E06B31 /* PCKit.m */,
+				BFE918E619AE2A29008925C3 /* PCKSynchronizer.h */,
+				BFE918E719AE2A29008925C3 /* PCKSynchronizer.m */,
 				BF26AA4319AB805000E06B31 /* Supporting Files */,
 			);
 			path = PHPConfKit;
@@ -163,6 +169,7 @@
 			files = (
 				BF0E30DD19AB86EC00F0A5E2 /* PHPConfKit.h in Headers */,
 				BF0E30DE19AB86EC00F0A5E2 /* PCKit.h in Headers */,
+				BFE918E819AE2A29008925C3 /* PCKSynchronizer.h in Headers */,
 				BF0E30DF19AB86EC00F0A5E2 /* PHPConfKit-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF26AA6819AB858D00E06B31 /* PCKit.m in Sources */,
+				BFE918E919AE2A29008925C3 /* PCKSynchronizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
