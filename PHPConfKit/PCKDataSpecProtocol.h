@@ -14,12 +14,14 @@
  */
 @protocol PCKDataSpec <NSObject>
 
-@required
+@optional
 
 /*! Init with the spec array, the content of the array must follow the order required properties listed below.
  @param specArray The content of the array must follow the order required properties listed below.
  */
 - (id)initWithSpecArray:(NSArray *)specArray;
+
+@required
 
 @property (readonly) NSString *requestTemplate;         //! @property requestTemplate template for request URL.
 
