@@ -9,6 +9,10 @@
 #import "PCKit.h"
 #import "PCKDataSpecProtocol.h"
 
+#import "CoreData+MagicalRecord.h"
+
+static NSString *const kPCKDataStoreNamed = @"kPCKDataStoreNamed";
+
 @implementation PCKit
 
 static NSString *applicationId;
@@ -31,6 +35,9 @@ static id <PCKDataSpec> dataSpec;
             @throw [NSException exceptionWithName:@"PCKitDataSpecNilException"
                                            reason:@"You shoud not set required data spec to nil" userInfo:nil];
         }
+        
+        //!!!: Initialize MagicRecord
+        [MagicalRecord setupCoreDataStackWithStoreNamed:kPCKDataStoreNamed];
     }
 }
 
