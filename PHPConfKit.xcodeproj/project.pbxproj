@@ -10,6 +10,7 @@
 		BF0E30DD19AB86EC00F0A5E2 /* PHPConfKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF26AA4519AB805000E06B31 /* PHPConfKit.h */; };
 		BF0E30DE19AB86EC00F0A5E2 /* PCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF26AA6619AB858D00E06B31 /* PCKit.h */; };
 		BF0E30DF19AB86EC00F0A5E2 /* PHPConfKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BF26AA4419AB805000E06B31 /* PHPConfKit-Prefix.pch */; };
+		BF22C46419CB2BCF00D50729 /* PHPConf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF22C46219CB2BCF00D50729 /* PHPConf.xcdatamodeld */; };
 		BF26AA4119AB805000E06B31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF26AA4019AB805000E06B31 /* Foundation.framework */; };
 		BF26AA4619AB805000E06B31 /* PHPConfKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF26AA4519AB805000E06B31 /* PHPConfKit.h */; };
 		BF26AA4F19AB805000E06B31 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF26AA4E19AB805000E06B31 /* XCTest.framework */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		1305AECB909943A0B4D737AD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		BF22C46319CB2BCF00D50729 /* PHPConf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PHPConf.xcdatamodel; sourceTree = "<group>"; };
 		BF26AA3D19AB805000E06B31 /* libPHPConfKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPHPConfKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF26AA4019AB805000E06B31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF26AA4419AB805000E06B31 /* PHPConfKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PHPConfKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				BF26AA4419AB805000E06B31 /* PHPConfKit-Prefix.pch */,
+				BF22C46219CB2BCF00D50729 /* PHPConf.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			files = (
 				BF26AA6819AB858D00E06B31 /* PCKit.m in Sources */,
 				BFE918E919AE2A29008925C3 /* PCKSynchronizer.m in Sources */,
+				BF22C46419CB2BCF00D50729 /* PHPConf.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +496,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF22C46219CB2BCF00D50729 /* PHPConf.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF22C46319CB2BCF00D50729 /* PHPConf.xcdatamodel */,
+			);
+			currentVersion = BF22C46319CB2BCF00D50729 /* PHPConf.xcdatamodel */;
+			path = PHPConf.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BF26AA3519AB805000E06B31 /* Project object */;
 }
