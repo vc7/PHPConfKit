@@ -12,3 +12,5 @@
 
 #import "PCKit.h"
 #import "PCKSynchronizer.h"
+#import "PCKQuery.h"
+#import "PCKObject.h"

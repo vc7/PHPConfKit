@@ -5,10 +5,12 @@ Pod::Spec.new do |spec|
   spec.description = "" 
   spec.license = "MIT"
   spec.author = { "Vincent Chen" => "vince78718@gmail.com" }
-  spec.ios.deployment_target = "7.0"
+  spec.ios.deployment_target = "7.1"
   spec.source = { :git => "http://www.github.com/vc7/PHPConfKit.git", :tag => "v#{spec.version}" }
-	spec.source_files	= "PHPConfKit/*.{h,m}"
+	spec.source_files	= "PHPConfKit/*.{h,m,xcdatamodeld}"
   spec.requires_arc = true
+
+	spec.framework    = 'CoreData'
 
   spec.dependency "AFNetworking", "~> 2.0"
   spec.dependency "MagicalRecord", "~> 2.0"
