@@ -14,4 +14,5 @@ Pod::Spec.new do |spec|
 
   spec.dependency "AFNetworking", "~> 2.0"
   spec.dependency "MagicalRecord", "~> 2.0"
+	spec.dependency 'SSDataKit'
 end
