@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+static NSString *const kPCKDataStoreNamed = @"kPCKDataStoreNamed";
+
 @protocol PCKDataSpec;
 
 @interface PCKit : NSObject

@@ -11,8 +11,6 @@
 
 #import "CoreData+MagicalRecord.h"
 
-static NSString *const kPCKDataStoreNamed = @"kPCKDataStoreNamed";
-
 @implementation PCKit
 
 static NSString *applicationId;
