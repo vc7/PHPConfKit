@@ -10,4 +10,9 @@
 
 @implementation PCKObject
 
++ (PCKQuery *)query
+{
+    return [PCKQuery queryWithEntityName:[self entityName]];
+}
+
 @end

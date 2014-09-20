@@ -10,4 +10,21 @@
 
 @implementation PCKQuery
 
+#pragma mark - PCKQuery convenient initializers
+
++ (instancetype)query
+{
+    PCKQuery *query = [[PCKQuery alloc] init];
+    
+    return query;
+}
+
++ (instancetype)queryWithEntityName:(NSString *)entityName
+{
+    PCKQuery *query = [[PCKQuery alloc] init];
+    query.entityName = entityName;
+    
+    return query;
+}
+
 @end

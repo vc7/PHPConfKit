@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
+#import <SSDataKit/SSDataKit.h>
+#import "PCKQuery.h"
 
-@interface PCKObject : NSManagedObject
+@interface PCKObject : SSManagedObject
+
+/*! Return a query instance with model object's entity name by default */
++ (PCKQuery *)query;
 
 @end

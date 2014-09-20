@@ -10,4 +10,11 @@
 
 @interface PCKQuery : NSObject
 
+/*! Return a new instance of PCKQuery. */
++ (instancetype)query;
+/*! Return a new instance of PCKQuery with given entity name. */
++ (instancetype)queryWithEntityName:(NSString *)entityName;
+
+@property (nonatomic, strong) NSString *entityName;
+
 @end
