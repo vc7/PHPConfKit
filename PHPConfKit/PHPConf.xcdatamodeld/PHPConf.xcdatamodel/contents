@@ -75,24 +75,24 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
-    <entity name="Version" syncable="YES">
+    <entity name="Version" representedClassName="PCKVersion" syncable="YES">
         <attribute name="code" optional="YES" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
         <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Version" positionX="-63" positionY="-18" width="128" height="103"/>
-        <element name="Venue" positionX="-54" positionY="18" width="128" height="103"/>
-        <element name="Session" positionX="-36" positionY="36" width="128" height="178"/>
-        <element name="Speaker" positionX="-18" positionY="90" width="128" height="133"/>
-        <element name="Conference" positionX="0" positionY="108" width="128" height="118"/>
-        <element name="Sponsor" positionX="18" positionY="117" width="128" height="133"/>
-        <element name="SponsorType" positionX="-18" positionY="90" width="128" height="88"/>
         <element name="AppStaff" positionX="-9" positionY="108" width="128" height="103"/>
-        <element name="Staff" positionX="0" positionY="117" width="128" height="88"/>
+        <element name="Conference" positionX="0" positionY="108" width="128" height="118"/>
         <element name="Department" positionX="9" positionY="126" width="128" height="88"/>
         <element name="News" positionX="27" positionY="144" width="128" height="120"/>
+        <element name="Session" positionX="-36" positionY="36" width="128" height="178"/>
+        <element name="Speaker" positionX="-18" positionY="90" width="128" height="133"/>
+        <element name="Sponsor" positionX="18" positionY="117" width="128" height="133"/>
+        <element name="SponsorType" positionX="-18" positionY="90" width="128" height="88"/>
+        <element name="Staff" positionX="0" positionY="117" width="128" height="88"/>
         <element name="StaffDepartmentRelation" positionX="36" positionY="144" width="128" height="120"/>
+        <element name="Venue" positionX="-54" positionY="18" width="128" height="103"/>
+        <element name="Version" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>

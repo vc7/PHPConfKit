@@ -32,6 +32,8 @@
 		BF26AA5B19AB805000E06B31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF26AA5919AB805000E06B31 /* InfoPlist.strings */; };
 		BF26AA5D19AB805000E06B31 /* PHPConfKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF26AA5C19AB805000E06B31 /* PHPConfKitTests.m */; };
 		BF26AA6819AB858D00E06B31 /* PCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF26AA6719AB858D00E06B31 /* PCKit.m */; };
+		BF82031119CDE4E900BFC092 /* PCKVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = BF82030F19CDE4E900BFC092 /* PCKVersion.h */; };
+		BF82031219CDE4E900BFC092 /* PCKVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82031019CDE4E900BFC092 /* PCKVersion.m */; };
 		BFE918E819AE2A29008925C3 /* PCKSynchronizer.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE918E619AE2A29008925C3 /* PCKSynchronizer.h */; };
 		BFE918E919AE2A29008925C3 /* PCKSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE918E719AE2A29008925C3 /* PCKSynchronizer.m */; };
 		BFE918EB19AE2D32008925C3 /* PCKDataSpecProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE918EA19AE2CEF008925C3 /* PCKDataSpecProtocol.h */; };
@@ -87,6 +89,8 @@
 		BF26AA5C19AB805000E06B31 /* PHPConfKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHPConfKitTests.m; sourceTree = "<group>"; };
 		BF26AA6619AB858D00E06B31 /* PCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCKit.h; sourceTree = "<group>"; };
 		BF26AA6719AB858D00E06B31 /* PCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCKit.m; sourceTree = "<group>"; };
+		BF82030F19CDE4E900BFC092 /* PCKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCKVersion.h; sourceTree = "<group>"; };
+		BF82031019CDE4E900BFC092 /* PCKVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCKVersion.m; sourceTree = "<group>"; };
 		BFE918E619AE2A29008925C3 /* PCKSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCKSynchronizer.h; sourceTree = "<group>"; };
 		BFE918E719AE2A29008925C3 /* PCKSynchronizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCKSynchronizer.m; sourceTree = "<group>"; };
 		BFE918EA19AE2CEF008925C3 /* PCKDataSpecProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCKDataSpecProtocol.h; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				BF22C46819CDA54700D50729 /* PCKQuery.m */,
 				BF22C46B19CDA56700D50729 /* PCKObject.h */,
 				BF22C46C19CDA56700D50729 /* PCKObject.m */,
+				BF82030F19CDE4E900BFC092 /* PCKVersion.h */,
+				BF82031019CDE4E900BFC092 /* PCKVersion.m */,
 				BF26AA4319AB805000E06B31 /* Supporting Files */,
 			);
 			path = PHPConfKit;
@@ -203,6 +209,7 @@
 				BF0E30DD19AB86EC00F0A5E2 /* PHPConfKit.h in Headers */,
 				BF0E30DE19AB86EC00F0A5E2 /* PCKit.h in Headers */,
 				BFE918EB19AE2D32008925C3 /* PCKDataSpecProtocol.h in Headers */,
+				BF82031119CDE4E900BFC092 /* PCKVersion.h in Headers */,
 				BFE918E819AE2A29008925C3 /* PCKSynchronizer.h in Headers */,
 				BF22C46D19CDA56700D50729 /* PCKObject.h in Headers */,
 				BF22C46919CDA54700D50729 /* PCKQuery.h in Headers */,
@@ -330,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF26AA6819AB858D00E06B31 /* PCKit.m in Sources */,
+				BF82031219CDE4E900BFC092 /* PCKVersion.m in Sources */,
 				BF22C46E19CDA56700D50729 /* PCKObject.m in Sources */,
 				BF22C46A19CDA54700D50729 /* PCKQuery.m in Sources */,
 				BFE918E919AE2A29008925C3 /* PCKSynchronizer.m in Sources */,
