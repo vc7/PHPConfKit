@@ -8,6 +8,9 @@
 
 #import "PCKQuery.h"
 
+#import <CoreData/CoreData.h>
+#import "CoreData+MagicalRecord.h"
+
 @implementation PCKQuery
 
 #pragma mark - PCKQuery convenient initializers
@@ -26,5 +29,39 @@
     
     return query;
 }
+
+#pragma mark - Public Methods
+
+- (PCKObject *)getFirstObject
+{
+    return nil;
+}
+- (void)getFirstObjectWithBlock:(PCKObjectResultBlock)block
+{
+    
+}
+
+- (NSArray *)findAll
+{
+    NSManagedObjectContext *managedObjectContext = [NSManagedObjectContext MR_defaultContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityName inManagedObjectContext:managedObjectContext];
+    NSManagedObject *managedObject = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:managedObjectContext];
+    
+    return nil;
+}
+- (void)findAllWithBlock:(PCKArrayResultBlock)block
+{
+    
+}
+
+- (NSArray *)findObjects
+{
+    return nil;
+}
+- (void)findObjectsInBackgroundWithBlock:(PCKArrayResultBlock)block
+{
+    
+}
+
 
 @end

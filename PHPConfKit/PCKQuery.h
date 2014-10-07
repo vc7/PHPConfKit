@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class PCKObject;
+
+typedef void (^PCKObjectResultBlock)(PCKObject *object, NSError *error);
+typedef void (^PCKArrayResultBlock)(NSArray *array, NSError *error);
+
 @interface PCKQuery : NSObject
 
 /*! Return a new instance of PCKQuery. */
@@ -16,5 +21,14 @@
 + (instancetype)queryWithEntityName:(NSString *)entityName;
 
 @property (nonatomic, strong) NSString *entityName;
+
+- (PCKObject *)getFirstObject;
+- (void)getFirstObjectWithBlock:(PCKObjectResultBlock)block;
+
+- (NSArray *)findAll;
+- (void)findAllWithBlock:(PCKArrayResultBlock)block;
+
+- (NSArray *)findObjects;
+- (void)findObjectsInBackgroundWithBlock:(PCKArrayResultBlock)block;
 
 @end

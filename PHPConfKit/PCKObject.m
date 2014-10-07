@@ -10,6 +10,11 @@
 
 @implementation PCKObject
 
++ (NSString *)entityName
+{
+    return NSStringFromClass([self class]);
+}
+
 + (PCKQuery *)query
 {
     return [PCKQuery queryWithEntityName:[self entityName]];

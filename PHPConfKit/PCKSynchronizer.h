@@ -30,4 +30,13 @@ typedef void (^PCKSynchronizerFailure)(NSURLSessionDataTask *task, NSError *erro
  */
 - (void)updateLocalDataWithSuccess:(PCKSynchronizerFailure)success failure:(PCKSynchronizerFailure)failure;
 
+/*! Fetch the session data arrays with success and failure block callback
+ @param success Success block will return an array with 2 session arrays, 0 is R0, 1 is R2.
+ @param failure Failure block to pass error message out.
+ */
+- (void)fetchSessionsWithSuccess:(PCKSynchronizerSuccess)success failure:(PCKSynchronizerFailure)failure;
+- (void)fetchVenuesWithSuccess:(PCKSynchronizerSuccess)success failure:(PCKSynchronizerFailure)failure;
+- (void)fetchSponsorsSuccess:(PCKSynchronizerSuccess)success failure:(PCKSynchronizerFailure)failure;
+- (void)fetchConfInfoWithSuccess:(PCKSynchronizerSuccess)success failure:(PCKSynchronizerFailure)failure;
+
 @end

@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <SSDataKit/SSDataKit.h>
 #import "PCKQuery.h"
+#import "CoreData+MagicalRecord.h"
 
-@interface PCKObject : SSManagedObject
+@interface PCKObject : NSManagedObject
+
++ (NSString *)entityName;
 
 /*! Return a query instance with model object's entity name by default */
 + (PCKQuery *)query;

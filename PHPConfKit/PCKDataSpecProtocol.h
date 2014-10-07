@@ -32,7 +32,7 @@
 @property (readonly) NSString *venueMap;                //! @property venueMap 會場地圖
 
 @property (readonly) NSString *sponsorGold;             //! @property sponsorGold 贊助 - 黃金級
-@property (readonly) NSString *sponsorSilver;           //! @property sponsorSilver 贊助 - 白銀級
+@property (readonly) NSString *sponsorSilver;           //! @property sponsorSilver 贊助 - 贊助媒體
 @property (readonly) NSString *sponsorDiamond;          //! @property sponsorDiamond 贊助 - 鑽石級
 @property (readonly) NSString *sponsorSpecialThanks;    //! @property sponsorSpecialThanks 贊助 - 特別感謝
 
